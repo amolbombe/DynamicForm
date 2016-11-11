@@ -16,6 +16,7 @@ struct Quote {
 
 class DataSource: NSObject {
     let fieldArrays: [BaseClass]!
+    var dataSource: TextFieldDataSource!
     
     init(fields: [BaseClass]) {
         self.fieldArrays = fields
@@ -33,6 +34,10 @@ extension DataSource: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SingleFieldTableViewCell", for: indexPath) as! SingleFieldTableViewCell
             if let attrbt = fieldArrays[indexPath.row].attributes {
                 cell.baseView.setData(attributes: attrbt)
+                if let validation = attrbt.validationData?[0] {
+                    dataSource = TextFieldDataSource(validation: validation)
+                    cell.baseView.textField.delegate = self.dataSource
+                }
             }
             return cell
         case "double":

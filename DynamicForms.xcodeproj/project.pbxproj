@@ -16,6 +16,7 @@
 		FC0F888B1DD58B5300AEA608 /* DoubleInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0F88891DD58B5300AEA608 /* DoubleInputTableViewCell.xib */; };
 		FC0F888E1DD58D6B00AEA608 /* TripleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0F888C1DD58D6B00AEA608 /* TripleTableViewCell.swift */; };
 		FC0F888F1DD58D6B00AEA608 /* TripleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0F888D1DD58D6B00AEA608 /* TripleTableViewCell.xib */; };
+		FC0F88911DD5A77100AEA608 /* TextFieldDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0F88901DD5A77100AEA608 /* TextFieldDataSource.swift */; };
 		FC3C4F1B1DD1CD2900E6D1C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3C4F1A1DD1CD2900E6D1C1 /* AppDelegate.swift */; };
 		FC3C4F1D1DD1CD2900E6D1C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3C4F1C1DD1CD2900E6D1C1 /* ViewController.swift */; };
 		FC3C4F201DD1CD2900E6D1C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3C4F1E1DD1CD2900E6D1C1 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		FC0F88891DD58B5300AEA608 /* DoubleInputTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoubleInputTableViewCell.xib; sourceTree = "<group>"; };
 		FC0F888C1DD58D6B00AEA608 /* TripleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripleTableViewCell.swift; sourceTree = "<group>"; };
 		FC0F888D1DD58D6B00AEA608 /* TripleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripleTableViewCell.xib; sourceTree = "<group>"; };
+		FC0F88901DD5A77100AEA608 /* TextFieldDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDataSource.swift; sourceTree = "<group>"; };
 		FC3C4F171DD1CD2900E6D1C1 /* DynamicForms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicForms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3C4F1A1DD1CD2900E6D1C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3C4F1C1DD1CD2900E6D1C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				FCC011FC1DD46D9800278DE7 /* Resources */,
 				FC3C4F1A1DD1CD2900E6D1C1 /* AppDelegate.swift */,
 				FCDFB40A1DD1FAB600FBF6AB /* QuoteTableViewCell.swift */,
+				FC0F88901DD5A77100AEA608 /* TextFieldDataSource.swift */,
 				FCDFB4081DD1F68500FBF6AB /* DataSource.swift */,
 				FC3C4F1C1DD1CD2900E6D1C1 /* ViewController.swift */,
 				FC3C4F1E1DD1CD2900E6D1C1 /* Main.storyboard */,
@@ -533,6 +536,7 @@
 				FC0F888A1DD58B5300AEA608 /* DoubleInputTableViewCell.swift in Sources */,
 				FC0F88861DD57BED00AEA608 /* CustomInputView.swift in Sources */,
 				FCC012061DD470DF00278DE7 /* BaseClass.swift in Sources */,
+				FC0F88911DD5A77100AEA608 /* TextFieldDataSource.swift in Sources */,
 				FC0F888E1DD58D6B00AEA608 /* TripleTableViewCell.swift in Sources */,
 				FCC012051DD470DF00278DE7 /* Attributes.swift in Sources */,
 				FC3C4F1B1DD1CD2900E6D1C1 /* AppDelegate.swift in Sources */,
