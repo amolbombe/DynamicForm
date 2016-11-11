@@ -1,0 +1,82 @@
+ [
+  {
+  "type": "input",
+  "tag": "firstName",
+  "attributes": {
+  "textColor": "#FF00000",
+  "placeHolder": "string",
+  "backgroundColor": "#00FF00",
+  "label": "User Name",
+  "validationData": [
+                     {
+                     "regx": "regex for empty",
+                     "message": "Please enter name"
+                     },
+                     {
+                     "regx": "regex for length",
+                     "message": "Please enter name greater than 6 character"
+                     }
+                     ]
+  }
+  },
+  {
+  "type": "text",
+  "tag": "textName",
+  "attributes": {
+  "textColor": "#FF00000",
+  "text": "User Name",
+  "backgroundColor": "#00FF00",
+  "placeHolder": "String"
+  }
+  },
+  {
+  "type": "double",
+  "tag": "lastName",
+  "attributes": {
+  "textColor": "#FF00000",
+  "backgroundColor": "#00FF00",
+  "label": "Select education",
+  "values": [
+             "Graduate",
+             "Post graduate",
+             "Phd"
+             ],
+  "placeHolder": "String",
+  "validationData": [
+                     {
+                     "regx": "regex for empty",
+                     "message": "Please enter name"
+                     },
+                     {
+                     "regx": "regex for length",
+                     "message": "Please enter name greater than 6 character"
+                     }
+                     ]
+  }
+  },
+  {
+  "type": "Triple",
+  "tag": "lastName",
+  "attributes": {
+  "textColor": "#FF00000",
+  "backgroundColor": "#00FF00",
+  "label": "Select education",
+  "values": [
+             "Graduate",
+             "Post graduate",
+             "Phd"
+             ],
+  "placeHolder": "String",
+  "validationData": [
+                     {
+                     "regx": "regex for empty",
+                     "message": "Please enter name"
+                     },
+                     {
+                     "regx": "regex for length",
+                     "message": "Please enter name greater than 6 character"
+                     }
+                     ]
+  }
+  }
+  ]

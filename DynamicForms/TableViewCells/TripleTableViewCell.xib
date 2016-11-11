@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="TripleTableViewCell" customModule="DynamicForms" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="464" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83U-ym-MBU" customClass="CustomInputView" customModule="DynamicForms" customModuleProvider="target">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6e-0M-J2C" customClass="CustomInputView" customModule="DynamicForms" customModuleProvider="target">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2te-Sf-R0H" customClass="CustomInputView" customModule="DynamicForms" customModuleProvider="target">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="i6e-0M-J2C" firstAttribute="leading" secondItem="83U-ym-MBU" secondAttribute="trailing" id="0Oa-Kv-efj"/>
+                    <constraint firstItem="i6e-0M-J2C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Nl-8r-rTs"/>
+                    <constraint firstItem="83U-ym-MBU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1hc-IC-4JX"/>
+                    <constraint firstItem="83U-ym-MBU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9as-k3-iQs"/>
+                    <constraint firstItem="2te-Sf-R0H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JR8-tG-5gN"/>
+                    <constraint firstItem="2te-Sf-R0H" firstAttribute="width" secondItem="83U-ym-MBU" secondAttribute="width" id="TjZ-3I-IHK"/>
+                    <constraint firstAttribute="bottom" secondItem="2te-Sf-R0H" secondAttribute="bottom" id="Xi0-gl-ejl"/>
+                    <constraint firstAttribute="bottom" secondItem="83U-ym-MBU" secondAttribute="bottom" id="XtV-F6-Grh"/>
+                    <constraint firstItem="i6e-0M-J2C" firstAttribute="width" secondItem="83U-ym-MBU" secondAttribute="width" id="bGG-Yi-z7z"/>
+                    <constraint firstAttribute="trailing" secondItem="2te-Sf-R0H" secondAttribute="trailing" id="fCO-9w-fxK"/>
+                    <constraint firstAttribute="bottom" secondItem="i6e-0M-J2C" secondAttribute="bottom" id="rHr-Mu-wyK"/>
+                    <constraint firstItem="2te-Sf-R0H" firstAttribute="leading" secondItem="i6e-0M-J2C" secondAttribute="trailing" id="rT0-cy-SUF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstInputView" destination="83U-ym-MBU" id="qdS-GM-dMU"/>
+                <outlet property="secondInputView" destination="i6e-0M-J2C" id="u16-kx-5Fq"/>
+                <outlet property="thirdInputView" destination="2te-Sf-R0H" id="EBq-c2-6ow"/>
+            </connections>
+            <point key="canvasLocation" x="42" y="65"/>
+        </tableViewCell>
+    </objects>
+</document>

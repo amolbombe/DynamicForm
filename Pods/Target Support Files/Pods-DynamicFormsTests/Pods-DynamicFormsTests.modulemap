@@ -1,0 +1,6 @@
+framework module Pods_DynamicFormsTests {
+  umbrella header "Pods-DynamicFormsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
