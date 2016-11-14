@@ -10,7 +10,8 @@ import UIKit
 import SwiftyJSON
 
 class ViewController: UIViewController {
-    
+    let validateData: [ValidationData]? = nil
+
     @IBOutlet weak var tableView: UITableView!
     
     var datasource: DataSource!
@@ -21,11 +22,6 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         // Do any additional setup after loading the view, typically from a nib.
-        let quotes = [
-            Quote(author: "Albert Einstein", text: "Two things are infinite: the universe and human stupidity; and I am not sure about the universe."),
-            Quote(author: "Steve Jobs", text: "Design is not just what it looks like and feels like. Design is how it works."),
-            Quote(author: "John Lennon", text: "Life is what happens when you’re busy making other plans.")
-        ]
         
         var fieldArray = [BaseClass]()
         let data: Data?
@@ -61,3 +57,5 @@ class ViewController: UIViewController {
         tableView.reloadData()
     }
 }
+
+

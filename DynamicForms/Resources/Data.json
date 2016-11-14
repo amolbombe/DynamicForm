@@ -20,7 +20,7 @@
   }
   },
   {
-  "type": "text",
+  "type": "input",
   "tag": "textName",
   "attributes": {
   "textColor": "#FF00000",
@@ -30,7 +30,7 @@
   }
   },
   {
-  "type": "double",
+  "type": "input",
   "tag": "lastName",
   "attributes": {
   "textColor": "#FF00000",
@@ -55,7 +55,7 @@
   }
   },
   {
-  "type": "Triple",
+  "type": "input",
   "tag": "lastName",
   "attributes": {
   "textColor": "#FF00000",

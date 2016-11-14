@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable class CustomInputView: UIView {
 
     @IBOutlet weak var nameLbl: UILabel!
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textField: DFTextField!
     @IBOutlet weak var errorLbl: UILabel!
     
     /*
@@ -69,6 +69,6 @@ import UIKit
     func setData(attributes:Attributes) {
         nameLbl.text = attributes.label
         textField.placeholder = attributes.placeHolder
-        errorLbl.text = attributes.validationData?[0].message
+        errorLbl.text = ""
     }
 }
