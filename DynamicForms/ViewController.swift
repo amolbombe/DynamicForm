@@ -9,10 +9,11 @@
 import UIKit
 import SwiftyJSON
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, DropDownDelegate {
     let validateData: [ValidationData]? = nil
 
     @IBOutlet weak var tableView: UITableView!
+    weak var delegate: DropDownDelegate?
     
     var datasource: DataSource!
     
@@ -35,10 +36,15 @@ class ViewController: UIViewController {
         }
         
         datasource = DataSource(fields: fieldArray)
+        datasource.setDelegate(delegate: self)
         
         DispatchQueue.main.async {
             self.setUpTableView()
         }
+    }
+    
+    func showPopOver(popover: UIViewController) {
+        self.present(popover, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,6 +59,8 @@ class ViewController: UIViewController {
         tableView.register(DoubleInputCellNib, forCellReuseIdentifier: "DoubleInputTableViewCell")
         let TripleInputCellNib = UINib(nibName: "TripleTableViewCell", bundle:nil)
         tableView.register(TripleInputCellNib, forCellReuseIdentifier: "TripleTableViewCell")
+        let DropDownCellNib = UINib(nibName: "DropDownTableViewCell", bundle:nil)
+        tableView.register(DropDownCellNib, forCellReuseIdentifier: "DropDownTableViewCell")
         tableView.dataSource = self.datasource
         tableView.reloadData()
     }

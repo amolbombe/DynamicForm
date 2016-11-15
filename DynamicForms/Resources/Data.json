@@ -30,7 +30,7 @@
   }
   },
   {
-  "type": "input",
+  "type": "dropdown",
   "tag": "lastName",
   "attributes": {
   "textColor": "#FF00000",

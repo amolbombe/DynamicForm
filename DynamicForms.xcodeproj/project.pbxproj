@@ -10,6 +10,8 @@
 		6CA1C116C99E6D3410E1337C /* Pods_DynamicFormsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C1BCF9D087259DCE86944 /* Pods_DynamicFormsTests.framework */; };
 		997CA6389CC240E564EC61B2 /* Pods_DynamicFormsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3953A391C718DF96DA708D0F /* Pods_DynamicFormsUITests.framework */; };
 		F5C0E7808B07E5E36F4F649A /* Pods_DynamicForms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDCB65A197B59052F4E6965E /* Pods_DynamicForms.framework */; };
+		FC0D6C5B1DDB19320092FFB7 /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D6C591DDB19320092FFB7 /* DropDownTableViewCell.swift */; };
+		FC0D6C5C1DDB19320092FFB7 /* DropDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0D6C5A1DDB19320092FFB7 /* DropDownTableViewCell.xib */; };
 		FC0F88841DD57B9E00AEA608 /* CustomInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0F88831DD57B9E00AEA608 /* CustomInputView.xib */; };
 		FC0F88861DD57BED00AEA608 /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0F88851DD57BED00AEA608 /* CustomInputView.swift */; };
 		FC0F888A1DD58B5300AEA608 /* DoubleInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0F88881DD58B5300AEA608 /* DoubleInputTableViewCell.swift */; };
@@ -60,6 +62,8 @@
 		CBCCCE4E6146F3AE611B01B1 /* Pods-DynamicFormsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicFormsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicFormsUITests/Pods-DynamicFormsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DC7C1BCF9D087259DCE86944 /* Pods_DynamicFormsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicFormsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCB65A197B59052F4E6965E /* Pods_DynamicForms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicForms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0D6C591DDB19320092FFB7 /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
+		FC0D6C5A1DDB19320092FFB7 /* DropDownTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTableViewCell.xib; sourceTree = "<group>"; };
 		FC0F88831DD57B9E00AEA608 /* CustomInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInputView.xib; sourceTree = "<group>"; };
 		FC0F88851DD57BED00AEA608 /* CustomInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
 		FC0F88881DD58B5300AEA608 /* DoubleInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleInputTableViewCell.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				FC0F88891DD58B5300AEA608 /* DoubleInputTableViewCell.xib */,
 				FC0F888C1DD58D6B00AEA608 /* TripleTableViewCell.swift */,
 				FC0F888D1DD58D6B00AEA608 /* TripleTableViewCell.xib */,
+				FC0D6C591DDB19320092FFB7 /* DropDownTableViewCell.swift */,
+				FC0D6C5A1DDB19320092FFB7 /* DropDownTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 				FC0F888B1DD58B5300AEA608 /* DoubleInputTableViewCell.xib in Resources */,
 				FCC011FE1DD46E0600278DE7 /* Data.json in Resources */,
 				FC0F888F1DD58D6B00AEA608 /* TripleTableViewCell.xib in Resources */,
+				FC0D6C5C1DDB19320092FFB7 /* DropDownTableViewCell.xib in Resources */,
 				FC3C4F251DD1CD2900E6D1C1 /* LaunchScreen.storyboard in Resources */,
 				FC3C4F221DD1CD2900E6D1C1 /* Assets.xcassets in Resources */,
 				FCC828861DD305B9001C1160 /* SingleFieldTableViewCell.xib in Resources */,
@@ -535,6 +542,7 @@
 				FCC012061DD470DF00278DE7 /* BaseClass.swift in Sources */,
 				FC0F888E1DD58D6B00AEA608 /* TripleTableViewCell.swift in Sources */,
 				FCC012051DD470DF00278DE7 /* Attributes.swift in Sources */,
+				FC0D6C5B1DDB19320092FFB7 /* DropDownTableViewCell.swift in Sources */,
 				FC3C4F1B1DD1CD2900E6D1C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

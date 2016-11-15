@@ -9,12 +9,21 @@
 import Foundation
 import UIKit
 
-class DataSource: NSObject {
+class DataSource: NSObject, DropDownDelegate {
     let fieldArrays: [BaseClass]!
 //    var dataSource: TextFieldDataSource!
+    weak var delegate: DropDownDelegate?
     
     init(fields: [BaseClass]) {
         self.fieldArrays = fields
+    }
+    
+    func setDelegate(delegate: DropDownDelegate) {
+        self.delegate = delegate
+    }
+    
+    func showPopOver(popover: UIViewController) {
+        delegate?.showPopOver(popover: popover)
     }
 }
 
@@ -35,6 +44,13 @@ extension DataSource: UITableViewDataSource, UITextFieldDelegate {
                     cell.baseView.textField.validationData = validation
                     cell.baseView.textField.delegate = self
                 }
+            }
+            return cell
+        case "dropdown":
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DropDownTableViewCell", for: indexPath) as! DropDownTableViewCell
+            cell.setDelegate(delegate: self)
+            if let attrbt = fieldArrays[indexPath.row].attributes {
+//                cell.viewController = self
             }
             return cell
         default:
