@@ -61,6 +61,8 @@ class ViewController: UIViewController, DropDownDelegate {
         tableView.register(TripleInputCellNib, forCellReuseIdentifier: "TripleTableViewCell")
         let DropDownCellNib = UINib(nibName: "DropDownTableViewCell", bundle:nil)
         tableView.register(DropDownCellNib, forCellReuseIdentifier: "DropDownTableViewCell")
+        let CheckMarkCellNib = UINib(nibName: "CheckMarkTableViewCell", bundle:nil)
+        tableView.register(CheckMarkCellNib, forCellReuseIdentifier: "CheckMarkTableViewCell")
         tableView.dataSource = self.datasource
         tableView.reloadData()
     }

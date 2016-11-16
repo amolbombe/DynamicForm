@@ -18,6 +18,9 @@
 		FC0F888B1DD58B5300AEA608 /* DoubleInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0F88891DD58B5300AEA608 /* DoubleInputTableViewCell.xib */; };
 		FC0F888E1DD58D6B00AEA608 /* TripleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0F888C1DD58D6B00AEA608 /* TripleTableViewCell.swift */; };
 		FC0F888F1DD58D6B00AEA608 /* TripleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0F888D1DD58D6B00AEA608 /* TripleTableViewCell.xib */; };
+		FC294FF91DDC6640000EB505 /* DFRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC294FF81DDC6640000EB505 /* DFRadioButton.swift */; };
+		FC294FFC1DDC7C87000EB505 /* CheckMarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC294FFA1DDC7C87000EB505 /* CheckMarkTableViewCell.swift */; };
+		FC294FFD1DDC7C87000EB505 /* CheckMarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC294FFB1DDC7C87000EB505 /* CheckMarkTableViewCell.xib */; };
 		FC3C4F1B1DD1CD2900E6D1C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3C4F1A1DD1CD2900E6D1C1 /* AppDelegate.swift */; };
 		FC3C4F1D1DD1CD2900E6D1C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3C4F1C1DD1CD2900E6D1C1 /* ViewController.swift */; };
 		FC3C4F201DD1CD2900E6D1C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3C4F1E1DD1CD2900E6D1C1 /* Main.storyboard */; };
@@ -33,6 +36,7 @@
 		FCC828851DD305B9001C1160 /* SingleFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC828831DD305B9001C1160 /* SingleFieldTableViewCell.swift */; };
 		FCC828861DD305B9001C1160 /* SingleFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCC828841DD305B9001C1160 /* SingleFieldTableViewCell.xib */; };
 		FCDFB4091DD1F68500FBF6AB /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDFB4081DD1F68500FBF6AB /* DataSource.swift */; };
+		FCFF81EC1DDC1B430089A4A7 /* DropDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFF81EB1DDC1B430089A4A7 /* DropDownViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,9 @@
 		FC0F88891DD58B5300AEA608 /* DoubleInputTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoubleInputTableViewCell.xib; sourceTree = "<group>"; };
 		FC0F888C1DD58D6B00AEA608 /* TripleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripleTableViewCell.swift; sourceTree = "<group>"; };
 		FC0F888D1DD58D6B00AEA608 /* TripleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripleTableViewCell.xib; sourceTree = "<group>"; };
+		FC294FF81DDC6640000EB505 /* DFRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFRadioButton.swift; sourceTree = "<group>"; };
+		FC294FFA1DDC7C87000EB505 /* CheckMarkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMarkTableViewCell.swift; sourceTree = "<group>"; };
+		FC294FFB1DDC7C87000EB505 /* CheckMarkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckMarkTableViewCell.xib; sourceTree = "<group>"; };
 		FC3C4F171DD1CD2900E6D1C1 /* DynamicForms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicForms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3C4F1A1DD1CD2900E6D1C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3C4F1C1DD1CD2900E6D1C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +98,7 @@
 		FCC828831DD305B9001C1160 /* SingleFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleFieldTableViewCell.swift; sourceTree = "<group>"; };
 		FCC828841DD305B9001C1160 /* SingleFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleFieldTableViewCell.xib; sourceTree = "<group>"; };
 		FCDFB4081DD1F68500FBF6AB /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		FCFF81EB1DDC1B430089A4A7 /* DropDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +161,8 @@
 				FC0F888D1DD58D6B00AEA608 /* TripleTableViewCell.xib */,
 				FC0D6C591DDB19320092FFB7 /* DropDownTableViewCell.swift */,
 				FC0D6C5A1DDB19320092FFB7 /* DropDownTableViewCell.xib */,
+				FC294FFA1DDC7C87000EB505 /* CheckMarkTableViewCell.swift */,
+				FC294FFB1DDC7C87000EB505 /* CheckMarkTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -187,6 +197,7 @@
 				FCC011FF1DD46E9300278DE7 /* Models */,
 				FCC011FC1DD46D9800278DE7 /* Resources */,
 				FC3C4F1A1DD1CD2900E6D1C1 /* AppDelegate.swift */,
+				FCFF81EB1DDC1B430089A4A7 /* DropDownViewController.swift */,
 				FCDFB4081DD1F68500FBF6AB /* DataSource.swift */,
 				FC3C4F1C1DD1CD2900E6D1C1 /* ViewController.swift */,
 				FC3C4F1E1DD1CD2900E6D1C1 /* Main.storyboard */,
@@ -241,6 +252,7 @@
 				FC0F88831DD57B9E00AEA608 /* CustomInputView.xib */,
 				FC0F88851DD57BED00AEA608 /* CustomInputView.swift */,
 				FCA08FD61DD993ED0007A061 /* DFTextField.swift */,
+				FC294FF81DDC6640000EB505 /* DFRadioButton.swift */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -366,6 +378,7 @@
 				FCC011FE1DD46E0600278DE7 /* Data.json in Resources */,
 				FC0F888F1DD58D6B00AEA608 /* TripleTableViewCell.xib in Resources */,
 				FC0D6C5C1DDB19320092FFB7 /* DropDownTableViewCell.xib in Resources */,
+				FC294FFD1DDC7C87000EB505 /* CheckMarkTableViewCell.xib in Resources */,
 				FC3C4F251DD1CD2900E6D1C1 /* LaunchScreen.storyboard in Resources */,
 				FC3C4F221DD1CD2900E6D1C1 /* Assets.xcassets in Resources */,
 				FCC828861DD305B9001C1160 /* SingleFieldTableViewCell.xib in Resources */,
@@ -533,13 +546,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCA08FD71DD993ED0007A061 /* DFTextField.swift in Sources */,
+				FC294FF91DDC6640000EB505 /* DFRadioButton.swift in Sources */,
 				FCDFB4091DD1F68500FBF6AB /* DataSource.swift in Sources */,
 				FCC828851DD305B9001C1160 /* SingleFieldTableViewCell.swift in Sources */,
 				FC3C4F1D1DD1CD2900E6D1C1 /* ViewController.swift in Sources */,
 				FCC012071DD470DF00278DE7 /* ValidationData.swift in Sources */,
 				FC0F888A1DD58B5300AEA608 /* DoubleInputTableViewCell.swift in Sources */,
+				FCFF81EC1DDC1B430089A4A7 /* DropDownViewController.swift in Sources */,
 				FC0F88861DD57BED00AEA608 /* CustomInputView.swift in Sources */,
 				FCC012061DD470DF00278DE7 /* BaseClass.swift in Sources */,
+				FC294FFC1DDC7C87000EB505 /* CheckMarkTableViewCell.swift in Sources */,
 				FC0F888E1DD58D6B00AEA608 /* TripleTableViewCell.swift in Sources */,
 				FCC012051DD470DF00278DE7 /* Attributes.swift in Sources */,
 				FC0D6C5B1DDB19320092FFB7 /* DropDownTableViewCell.swift in Sources */,

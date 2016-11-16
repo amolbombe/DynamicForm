@@ -50,7 +50,14 @@ extension DataSource: UITableViewDataSource, UITextFieldDelegate {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DropDownTableViewCell", for: indexPath) as! DropDownTableViewCell
             cell.setDelegate(delegate: self)
             if let attrbt = fieldArrays[indexPath.row].attributes {
-//                cell.viewController = self
+                cell.sArray = attrbt.values!
+            }
+            return cell
+        case "check":
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CheckMarkTableViewCell", for: indexPath) as! CheckMarkTableViewCell
+//            cell.setDelegate(delegate: self)
+            if let attrbt = fieldArrays[indexPath.row].attributes {
+//                cell.sArray = attrbt.values!
             }
             return cell
         default:

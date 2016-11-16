@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="CheckMarkTableViewCell" customModule="DynamicForms" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25U-SJ-W7W" customClass="DFRadioButton" customModule="DynamicForms" customModuleProvider="target">
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="firstOptionButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ptd-Sc-Dpf"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNV-po-pzF" customClass="DFRadioButton" customModule="DynamicForms" customModuleProvider="target">
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="secondOptionButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sJB-1D-CA8"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vNV-po-pzF" firstAttribute="leading" secondItem="25U-SJ-W7W" secondAttribute="trailing" constant="20" id="1E0-rA-wvI"/>
+                    <constraint firstItem="25U-SJ-W7W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9bj-dB-e1T"/>
+                    <constraint firstItem="25U-SJ-W7W" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Edu-Bf-2cT"/>
+                    <constraint firstAttribute="trailing" secondItem="vNV-po-pzF" secondAttribute="trailing" constant="20" id="GRP-c1-UD5"/>
+                    <constraint firstItem="vNV-po-pzF" firstAttribute="width" secondItem="25U-SJ-W7W" secondAttribute="width" id="Nhs-4k-Qs5"/>
+                    <constraint firstItem="vNV-po-pzF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hKc-SA-Z0k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstOptionButton" destination="25U-SJ-W7W" id="Aat-2z-KtH"/>
+                <outlet property="secondOptionButton" destination="vNV-po-pzF" id="hPF-zY-7Oc"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="85"/>
+        </tableViewCell>
+    </objects>
+</document>

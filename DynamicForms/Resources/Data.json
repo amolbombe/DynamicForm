@@ -55,7 +55,7 @@
   }
   },
   {
-  "type": "input",
+  "type": "check",
   "tag": "lastName",
   "attributes": {
   "textColor": "#FF00000",
