@@ -28,6 +28,8 @@
 		FC3C4F251DD1CD2900E6D1C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3C4F231DD1CD2900E6D1C1 /* LaunchScreen.storyboard */; };
 		FC3C4F301DD1CD2900E6D1C1 /* DynamicFormsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3C4F2F1DD1CD2900E6D1C1 /* DynamicFormsTests.swift */; };
 		FC3C4F3B1DD1CD2900E6D1C1 /* DynamicFormsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3C4F3A1DD1CD2900E6D1C1 /* DynamicFormsUITests.swift */; };
+		FC829AEF1DDD915700DE6769 /* CameraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC829AED1DDD915700DE6769 /* CameraTableViewCell.swift */; };
+		FC829AF01DDD915700DE6769 /* CameraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC829AEE1DDD915700DE6769 /* CameraTableViewCell.xib */; };
 		FCA08FD71DD993ED0007A061 /* DFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA08FD61DD993ED0007A061 /* DFTextField.swift */; };
 		FCC011FE1DD46E0600278DE7 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = FCC011FD1DD46E0600278DE7 /* Data.json */; };
 		FCC012051DD470DF00278DE7 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC012021DD470DF00278DE7 /* Attributes.swift */; };
@@ -90,6 +92,8 @@
 		FC3C4F361DD1CD2900E6D1C1 /* DynamicFormsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicFormsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3C4F3A1DD1CD2900E6D1C1 /* DynamicFormsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFormsUITests.swift; sourceTree = "<group>"; };
 		FC3C4F3C1DD1CD2900E6D1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC829AED1DDD915700DE6769 /* CameraTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraTableViewCell.swift; sourceTree = "<group>"; };
+		FC829AEE1DDD915700DE6769 /* CameraTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraTableViewCell.xib; sourceTree = "<group>"; };
 		FCA08FD61DD993ED0007A061 /* DFTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFTextField.swift; sourceTree = "<group>"; };
 		FCC011FD1DD46E0600278DE7 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		FCC012021DD470DF00278DE7 /* Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				FC0D6C5A1DDB19320092FFB7 /* DropDownTableViewCell.xib */,
 				FC294FFA1DDC7C87000EB505 /* CheckMarkTableViewCell.swift */,
 				FC294FFB1DDC7C87000EB505 /* CheckMarkTableViewCell.xib */,
+				FC829AED1DDD915700DE6769 /* CameraTableViewCell.swift */,
+				FC829AEE1DDD915700DE6769 /* CameraTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -334,6 +340,7 @@
 				TargetAttributes = {
 					FC3C4F161DD1CD2900E6D1C1 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UVK3G7F8CM;
 						ProvisioningStyle = Automatic;
 					};
 					FC3C4F2A1DD1CD2900E6D1C1 = {
@@ -378,6 +385,7 @@
 				FCC011FE1DD46E0600278DE7 /* Data.json in Resources */,
 				FC0F888F1DD58D6B00AEA608 /* TripleTableViewCell.xib in Resources */,
 				FC0D6C5C1DDB19320092FFB7 /* DropDownTableViewCell.xib in Resources */,
+				FC829AF01DDD915700DE6769 /* CameraTableViewCell.xib in Resources */,
 				FC294FFD1DDC7C87000EB505 /* CheckMarkTableViewCell.xib in Resources */,
 				FC3C4F251DD1CD2900E6D1C1 /* LaunchScreen.storyboard in Resources */,
 				FC3C4F221DD1CD2900E6D1C1 /* Assets.xcassets in Resources */,
@@ -545,6 +553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC829AEF1DDD915700DE6769 /* CameraTableViewCell.swift in Sources */,
 				FCA08FD71DD993ED0007A061 /* DFTextField.swift in Sources */,
 				FC294FF91DDC6640000EB505 /* DFRadioButton.swift in Sources */,
 				FCDFB4091DD1F68500FBF6AB /* DataSource.swift in Sources */,
@@ -712,6 +721,7 @@
 			baseConfigurationReference = 263CF67EFEEC5EFBE001BD01 /* Pods-DynamicForms.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UVK3G7F8CM;
 				INFOPLIST_FILE = DynamicForms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.softcell.DynamicForms;
@@ -725,6 +735,7 @@
 			baseConfigurationReference = A590092F0FA4F04D6075441C /* Pods-DynamicForms.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UVK3G7F8CM;
 				INFOPLIST_FILE = DynamicForms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.softcell.DynamicForms;

@@ -27,7 +27,7 @@ class DataSource: NSObject, DropDownDelegate {
     }
 }
 
-extension DataSource: UITableViewDataSource, UITextFieldDelegate {
+extension DataSource: UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fieldArrays.count
     }
@@ -60,11 +60,30 @@ extension DataSource: UITableViewDataSource, UITextFieldDelegate {
 //                cell.sArray = attrbt.values!
             }
             return cell
+        case "image":
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CameraTableViewCell", for: indexPath) as! CameraTableViewCell
+            //            cell.setDelegate(delegate: self)
+            cell.setDelegate(delegate: self)
+            if let attrbt = fieldArrays[indexPath.row].attributes {
+                //                cell.sArray = attrbt.values!
+            }
+            return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SingleFieldTableViewCell", for: indexPath) as! SingleFieldTableViewCell
             let attrbt = fieldArrays[indexPath.row].attributes
             return cell
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if let type = fieldArrays[indexPath.row].type! as? String {
+            if type == "image" {
+                return 100
+            } else {
+                return 80
+            }
+        }
+        return 80
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {

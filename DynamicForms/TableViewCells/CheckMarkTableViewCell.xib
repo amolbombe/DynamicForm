@@ -12,33 +12,47 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="109"/>
+                <frame key="frameInset" width="320" height="110"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25U-SJ-W7W" customClass="DFRadioButton" customModule="DynamicForms" customModuleProvider="target">
-                        <state key="normal" title="Button"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="tib-JR-8EO"/>
+                        </constraints>
+                        <state key="normal" title="Male">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
                         <connections>
                             <action selector="firstOptionButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ptd-Sc-Dpf"/>
                         </connections>
                     </button>
                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNV-po-pzF" customClass="DFRadioButton" customModule="DynamicForms" customModuleProvider="target">
-                        <state key="normal" title="Button"/>
+                        <state key="normal" title="Female">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
                         <connections>
                             <action selector="secondOptionButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sJB-1D-CA8"/>
                         </connections>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYF-mx-ErR">
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="vNV-po-pzF" firstAttribute="leading" secondItem="25U-SJ-W7W" secondAttribute="trailing" constant="20" id="1E0-rA-wvI"/>
+                    <constraint firstItem="vNV-po-pzF" firstAttribute="leading" secondItem="25U-SJ-W7W" secondAttribute="trailing" constant="20" id="8We-ut-Kgj"/>
                     <constraint firstItem="25U-SJ-W7W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9bj-dB-e1T"/>
                     <constraint firstItem="25U-SJ-W7W" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Edu-Bf-2cT"/>
-                    <constraint firstAttribute="trailing" secondItem="vNV-po-pzF" secondAttribute="trailing" constant="20" id="GRP-c1-UD5"/>
                     <constraint firstItem="vNV-po-pzF" firstAttribute="width" secondItem="25U-SJ-W7W" secondAttribute="width" id="Nhs-4k-Qs5"/>
+                    <constraint firstItem="25U-SJ-W7W" firstAttribute="top" secondItem="CYF-mx-ErR" secondAttribute="bottom" constant="7" id="gWJ-CB-DKJ"/>
                     <constraint firstItem="vNV-po-pzF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hKc-SA-Z0k"/>
+                    <constraint firstItem="CYF-mx-ErR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="wvf-ZM-pri"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="firstOptionButton" destination="25U-SJ-W7W" id="Aat-2z-KtH"/>
+                <outlet property="nameLabel" destination="CYF-mx-ErR" id="db0-hh-Bk8"/>
                 <outlet property="secondOptionButton" destination="vNV-po-pzF" id="hPF-zY-7Oc"/>
             </connections>
             <point key="canvasLocation" x="25" y="85"/>

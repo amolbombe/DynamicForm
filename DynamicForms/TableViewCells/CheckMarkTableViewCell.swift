@@ -12,6 +12,7 @@ class CheckMarkTableViewCell: UITableViewCell {
 
     @IBOutlet weak var firstOptionButton: DFRadioButton!
     @IBOutlet weak var secondOptionButton: DFRadioButton!
+    @IBOutlet weak var nameLabel: UILabel!
     
     var selectedText = ""
     
