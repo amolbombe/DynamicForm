@@ -42,7 +42,7 @@ class DropDownTableViewCell: UITableViewCell, UIPopoverPresentationControllerDel
         nameLabel.text = attributes.label
     }
     
-    @IBAction func dropDownButtonTapped(_ sender: AnyObject) {
+    @IBAction func dropDownButtonTapped(_ sender: UIButton, forEvent event: UIEvent) {
         
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "popoverVC") as! DropDownViewController
@@ -53,7 +53,11 @@ class DropDownTableViewCell: UITableViewCell, UIPopoverPresentationControllerDel
         vc.sArray = self.sArray
         popover.delegate = self
         popover.sourceView = dropDownButton
-        popover.sourceRect = CGRect(x: dropDownButton.bounds.size.width/2, y: dropDownButton.bounds.size.height/2, width: 0, height: 0)
+        let buttonView = sender as UIView
+        let touch = event.allTouches?.first
+        let point = (touch?.location(in: buttonView) ?? CGPoint.zero)
+        popover.sourceRect = CGRect(x: point.x, y: point.y, width: 0, height: 0)
         delegate?.showPopOver(popover: vc)
     }
+
 }
