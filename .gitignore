@@ -1,0 +1,5 @@
+#ignored files list
+*.DS_Store
+*.xcworkspace
+*.xcodeproj
+Pods/
