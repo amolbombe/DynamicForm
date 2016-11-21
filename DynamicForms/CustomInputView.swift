@@ -67,6 +67,11 @@ import UIKit
     }
     
     func setData(attributes:Attributes) {
+        if let validation = attributes.validationData {
+            textField.errorLabel = errorLbl
+            textField.nameLabel = nameLbl
+            textField.validationData = validation
+        }
         nameLbl.text = attributes.label
         textField.placeholder = attributes.placeHolder
         errorLbl.text = ""

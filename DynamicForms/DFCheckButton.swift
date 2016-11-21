@@ -1,17 +1,18 @@
 //
-//  DFRadioButton.swift
+//  DFCheckButton.swift
 //  DynamicForms
 //
-//  Created by Softcell on 16/11/16.
+//  Created by Softcell on 18/11/16.
 //  Copyright © 2016 Softcell. All rights reserved.
 //
 
+import Foundation
 import UIKit
-@IBDesignable class DFRadioButton: UIButton {
-
+@IBDesignable class DFCheckButton: UIButton {
+    
     // Images
-    let checkedImage = UIImage(named: "CheckButton")! as UIImage
-    let uncheckedImage = UIImage(named: "UncheckedButton")! as UIImage
+    let checkedImage = UIImage(named: "CheckBoxButton")! as UIImage
+    let uncheckedImage = UIImage(named: "UncheckedBoxButton")! as UIImage
     
     override init(frame: CGRect) {
         super.init(frame: frame)

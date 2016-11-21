@@ -14,8 +14,10 @@ protocol DropDownDelegate: class {
 
 class DropDownTableViewCell: UITableViewCell, UIPopoverPresentationControllerDelegate, SetDropDownDelegate {
     @IBOutlet weak var dropDownButton: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
+    
     weak var delegate: DropDownDelegate?
-    var sArray = ["1", "2", "3"]
+    var sArray = [String]()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,6 +38,10 @@ class DropDownTableViewCell: UITableViewCell, UIPopoverPresentationControllerDel
         dropDownButton.setTitle(selectedValue, for: .normal)
     }
     
+    func setData(attributes:Attributes) {
+        nameLabel.text = attributes.label
+    }
+    
     @IBAction func dropDownButtonTapped(_ sender: AnyObject) {
         
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -50,5 +56,4 @@ class DropDownTableViewCell: UITableViewCell, UIPopoverPresentationControllerDel
         popover.sourceRect = CGRect(x: dropDownButton.bounds.size.width/2, y: dropDownButton.bounds.size.height/2, width: 0, height: 0)
         delegate?.showPopOver(popover: vc)
     }
-    
 }

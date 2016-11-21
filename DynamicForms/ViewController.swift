@@ -63,7 +63,12 @@ class ViewController: UIViewController, DropDownDelegate {
         tableView.register(DropDownCellNib, forCellReuseIdentifier: "DropDownTableViewCell")
         let CheckMarkCellNib = UINib(nibName: "CheckMarkTableViewCell", bundle:nil)
         tableView.register(CheckMarkCellNib, forCellReuseIdentifier: "CheckMarkTableViewCell")
+        let CameraCellNib = UINib(nibName: "CameraTableViewCell", bundle:nil)
+        tableView.register(CameraCellNib, forCellReuseIdentifier: "CameraTableViewCell")
+        let CheckBoxCellNib = UINib(nibName: "CheckBoxTableViewCell", bundle:nil)
+        tableView.register(CheckBoxCellNib, forCellReuseIdentifier: "CheckBoxTableViewCell")
         tableView.dataSource = self.datasource
+        tableView.delegate = self.datasource
         tableView.reloadData()
     }
 }

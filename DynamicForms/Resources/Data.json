@@ -2,7 +2,7 @@
   {
   "type": "input",
   "tag": "firstName",
-  "attributes": {
+  "attributes": [{
   "textColor": "#FF00000",
   "placeHolder": "string",
   "backgroundColor": "#00FF00",
@@ -17,22 +17,110 @@
                      "message": "Please enter name greater than 6 character"
                      }
                      ]
-  }
+  }]
   },
   {
-  "type": "input",
+  "type": "double",
+  "tag": "User Name",
+  "attributes": [{
+                 "textColor": "#FF00000",
+                 "placeHolder": "First Name",
+                 "backgroundColor": "#00FF00",
+                 "label": "First Name",
+                 "validationData": [
+                                    {
+                                    "regx": "regex for empty",
+                                    "message": "Please enter name"
+                                    },
+                                    {
+                                    "regx": "regex for length",
+                                    "message": "Please enter name greater than 6 character"
+                                    }
+                                    ]
+                 },
+                 {
+                 "textColor": "#FF00000",
+                 "placeHolder": "Last Name",
+                 "backgroundColor": "#00FF00",
+                 "label": "Last Name",
+                 "validationData": [
+                                    {
+                                    "regx": "regex for empty",
+                                    "message": "Please enter name"
+                                    },
+                                    {
+                                    "regx": "regex for length",
+                                    "message": "Please enter name greater than 6 character"
+                                    }
+                                    ]
+                 }]
+  },
+  {
+  "type": "triple",
+  "tag": "UserName",
+  "attributes": [{
+                 "textColor": "#FF00000",
+                 "placeHolder": "First Name",
+                 "backgroundColor": "#00FF00",
+                 "label": "First Name",
+                 "validationData": [
+                                    {
+                                    "regx": "regex for empty",
+                                    "message": "Please enter name"
+                                    },
+                                    {
+                                    "regx": "regex for length",
+                                    "message": "Please enter name greater than 6 character"
+                                    }
+                                    ]
+                 },
+                 {
+                 "textColor": "#FF00000",
+                 "placeHolder": "Middle Name",
+                 "backgroundColor": "#00FF00",
+                 "label": "Middle Name",
+                 "validationData": [
+                                    {
+                                    "regx": "regex for empty",
+                                    "message": "Please enter name"
+                                    },
+                                    {
+                                    "regx": "regex for length",
+                                    "message": "Please enter name greater than 6 character"
+                                    }
+                                    ]
+                 },
+                 {
+                 "textColor": "#FF00000",
+                 "placeHolder": "Last Name",
+                 "backgroundColor": "#00FF00",
+                 "label": "Last Name",
+                 "validationData": [
+                                    {
+                                    "regx": "regex for empty",
+                                    "message": "Please enter name"
+                                    },
+                                    {
+                                    "regx": "regex for length",
+                                    "message": "Please enter name greater than 6 character"
+                                    }
+                                    ]
+                 }]
+  },
+  {
+  "type": "image",
   "tag": "textName",
-  "attributes": {
+  "attributes": [{
   "textColor": "#FF00000",
   "text": "User Name",
   "backgroundColor": "#00FF00",
   "placeHolder": "String"
-  }
+  }]
   },
   {
   "type": "dropdown",
   "tag": "lastName",
-  "attributes": {
+  "attributes": [{
   "textColor": "#FF00000",
   "backgroundColor": "#00FF00",
   "label": "Select education",
@@ -52,12 +140,62 @@
                      "message": "Please enter name greater than 6 character"
                      }
                      ]
-  }
+  }]
+  },
+  {
+  "type": "image",
+  "tag": "lastName",
+  "attributes": [{
+  "textColor": "#FF00000",
+  "backgroundColor": "#00FF00",
+  "label": "Select education",
+  "values": [
+             "Graduate",
+             "Post graduate",
+             "Phd"
+             ],
+  "placeHolder": "String",
+  "validationData": [
+                     {
+                     "regx": "regex for empty",
+                     "message": "Please enter name"
+                     },
+                     {
+                     "regx": "regex for length",
+                     "message": "Please enter name greater than 6 character"
+                     }
+                     ]
+  }]
+  },
+  {
+  "type": "radio",
+  "tag": "lastName",
+  "attributes": [{
+  "textColor": "#FF00000",
+  "backgroundColor": "#00FF00",
+  "label": "Select education",
+  "values": [
+             "Graduate",
+             "Post graduate",
+             "Phd"
+             ],
+  "placeHolder": "String",
+  "validationData": [
+                     {
+                     "regx": "regex for empty",
+                     "message": "Please enter name"
+                     },
+                     {
+                     "regx": "regex for length",
+                     "message": "Please enter name greater than 6 character"
+                     }
+                     ]
+  }]
   },
   {
   "type": "check",
   "tag": "lastName",
-  "attributes": {
+  "attributes": [{
   "textColor": "#FF00000",
   "backgroundColor": "#00FF00",
   "label": "Select education",
@@ -77,6 +215,6 @@
                      "message": "Please enter name greater than 6 character"
                      }
                      ]
-  }
+  }]
   }
   ]

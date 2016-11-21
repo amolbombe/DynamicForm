@@ -19,7 +19,7 @@ public class BaseClass: NSObject, Mappable {
 
     // MARK: Properties
 	public var tag: String?
-	public var attributes: Attributes?
+	public var attributes: [Attributes]?
 	public var type: String?
 
 
@@ -40,7 +40,17 @@ public class BaseClass: NSObject, Mappable {
     */
     public init(json: JSON) {
 		tag = json[kBaseClassTagKey].string
-		attributes = Attributes(json: json[kBaseClassAttributesKey])
+//		attributes = Attributes(json: json[kBaseClassAttributesKey])
+        
+        attributes = []
+        if let items = json[kBaseClassAttributesKey].array {
+            for item in items {
+                attributes?.append(Attributes(json: item))
+            }
+        } else {
+            attributes = nil
+        }
+        
 		type = json[kBaseClassTypeKey].string
 
     }
@@ -75,9 +85,16 @@ public class BaseClass: NSObject, Mappable {
 		if tag != nil {
 			dictionary.updateValue(tag! as AnyObject, forKey: kBaseClassTagKey)
 		}
-		if attributes != nil {
-			dictionary.updateValue(attributes!.dictionaryRepresentation() as AnyObject, forKey: kBaseClassAttributesKey)
-		}
+//		if attributes != nil {
+//			dictionary.updateValue(attributes!.dictionaryRepresentation() as AnyObject, forKey: kBaseClassAttributesKey)
+//		}
+        if (attributes?.count)! > 0 {
+            var temp: [AnyObject] = []
+            for item in attributes! {
+                temp.append(item.dictionaryRepresentation() as AnyObject)
+            }
+            dictionary.updateValue(temp as AnyObject, forKey: kBaseClassAttributesKey)
+        }
 		if type != nil {
 			dictionary.updateValue(type! as AnyObject, forKey: kBaseClassTypeKey)
 		}
@@ -88,7 +105,7 @@ public class BaseClass: NSObject, Mappable {
     // MARK: NSCoding Protocol
     required public init(coder aDecoder: NSCoder) {
 		self.tag = aDecoder.decodeObject(forKey: kBaseClassTagKey) as? String
-		self.attributes = aDecoder.decodeObject(forKey: kBaseClassAttributesKey) as? Attributes
+		self.attributes = aDecoder.decodeObject(forKey: kBaseClassAttributesKey) as? [Attributes]
 		self.type = aDecoder.decodeObject(forKey: kBaseClassTypeKey) as? String
 
     }
