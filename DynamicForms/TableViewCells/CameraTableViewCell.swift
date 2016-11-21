@@ -24,6 +24,8 @@ class CameraTableViewCell: UITableViewCell, UINavigationControllerDelegate, UIIm
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        itemImageView.layer.borderWidth = 1
+        itemImageView.layer.borderColor = UIColor.black.cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -36,11 +38,14 @@ class CameraTableViewCell: UITableViewCell, UINavigationControllerDelegate, UIIm
         self.delegate = delegate
     }
     
+    func setData(attributes:Attributes) {
+        nameLabel.text = attributes.label
+    }
+    
     @IBAction func cameraButtonTapped(_ sender: AnyObject) {
         imagePicker =  UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary
-//        presentViewController(imagePicker, animated: true, completion: nil)
         delegate?.showPopOver(popover: imagePicker)
     }
  
@@ -50,5 +55,4 @@ class CameraTableViewCell: UITableViewCell, UINavigationControllerDelegate, UIIm
         }
         picker.dismiss(animated: true, completion: nil)
     }
-    
 }

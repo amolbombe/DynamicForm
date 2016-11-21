@@ -38,6 +38,10 @@ class DropDownTableViewCell: UITableViewCell, UIPopoverPresentationControllerDel
         dropDownButton.setTitle(selectedValue, for: .normal)
     }
     
+    func setData(attributes:Attributes) {
+        nameLabel.text = attributes.label
+    }
+    
     @IBAction func dropDownButtonTapped(_ sender: AnyObject) {
         
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
