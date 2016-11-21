@@ -1,20 +1,20 @@
  [
   {
   "type": "input",
-  "tag": "firstName",
+  "tag": "email",
   "attributes": [{
   "textColor": "#FF00000",
-  "placeHolder": "string",
+  "placeHolder": "Email Id",
   "backgroundColor": "#00FF00",
-  "label": "User Name",
+  "label": "Email Id",
   "validationData": [
                      {
                      "regx": "regex for empty",
                      "message": "Please enter name"
                      },
                      {
-                     "regx": "regex for length",
-                     "message": "Please enter name greater than 6 character"
+                     "regx": "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}",
+                     "message": "Please enter valid Email."
                      }
                      ]
   }]
@@ -29,12 +29,12 @@
                  "label": "First Name",
                  "validationData": [
                                     {
-                                    "regx": "regex for empty",
-                                    "message": "Please enter name"
+                                    "regx": "",
+                                    "message": "Please enter name."
                                     },
                                     {
-                                    "regx": "regex for length",
-                                    "message": "Please enter name greater than 6 character"
+                                    "regx": "[a-zA-Z]{3,30}",
+                                    "message": "Please enter valid First Name."
                                     }
                                     ]
                  },
@@ -45,12 +45,12 @@
                  "label": "Last Name",
                  "validationData": [
                                     {
-                                    "regx": "regex for empty",
-                                    "message": "Please enter name"
+                                    "regx": "",
+                                    "message": "Please enter name."
                                     },
                                     {
-                                    "regx": "regex for length",
-                                    "message": "Please enter name greater than 6 character"
+                                    "regx": "[a-zA-Z]{3,30}",
+                                    "message": "Please enter valid Last Name."
                                     }
                                     ]
                  }]
@@ -60,49 +60,49 @@
   "tag": "UserName",
   "attributes": [{
                  "textColor": "#FF00000",
-                 "placeHolder": "First Name",
+                 "placeHolder": "Pin Code",
                  "backgroundColor": "#00FF00",
-                 "label": "First Name",
+                 "label": "Pin Code",
                  "validationData": [
                                     {
-                                    "regx": "regex for empty",
-                                    "message": "Please enter name"
+                                    "regx": "",
+                                    "message": "Please enter name."
                                     },
                                     {
-                                    "regx": "regex for length",
-                                    "message": "Please enter name greater than 6 character"
+                                    "regx": "[0-9]{6,6}",
+                                    "message": "Please enter valid pin code."
                                     }
                                     ]
                  },
                  {
                  "textColor": "#FF00000",
-                 "placeHolder": "Middle Name",
+                 "placeHolder": "City",
                  "backgroundColor": "#00FF00",
-                 "label": "Middle Name",
+                 "label": "City",
                  "validationData": [
                                     {
-                                    "regx": "regex for empty",
-                                    "message": "Please enter name"
+                                    "regx": "",
+                                    "message": "Please enter name."
                                     },
                                     {
-                                    "regx": "regex for length",
-                                    "message": "Please enter name greater than 6 character"
+                                    "regx": "[a-zA-Z]{3,30}",
+                                    "message": "Please enter valid City."
                                     }
                                     ]
                  },
                  {
                  "textColor": "#FF00000",
-                 "placeHolder": "Last Name",
+                 "placeHolder": "State",
                  "backgroundColor": "#00FF00",
-                 "label": "Last Name",
+                 "label": "State",
                  "validationData": [
                                     {
-                                    "regx": "regex for empty",
+                                    "regx": "",
                                     "message": "Please enter name"
                                     },
                                     {
-                                    "regx": "regex for length",
-                                    "message": "Please enter name greater than 6 character"
+                                    "regx": "[a-zA-Z]{3,30}",
+                                    "message": "Please enter valid State."
                                     }
                                     ]
                  }]

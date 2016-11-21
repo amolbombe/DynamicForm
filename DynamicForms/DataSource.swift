@@ -169,8 +169,8 @@ extension DataSource: UITableViewDataSource, UITableViewDelegate, UITextFieldDel
     func validate(testStr: String, value: [ValidationData]) -> Bool {
         var result = false
         for validate in value {
-            let regEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
-            let range = testStr.range(of: regEx, options: .regularExpression, range: nil, locale: nil)
+            let regEx = validate.regx//"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+            let range = testStr.range(of: regEx!, options: .regularExpression, range: nil, locale: nil)
             result = range != nil ? true : false
         }
         return result
