@@ -73,7 +73,24 @@ import UIKit
             textField.validationData = validation
         }
         nameLbl.text = attributes.label
-        textField.placeholder = attributes.placeHolder
         errorLbl.text = ""
+        textField.placeholder = attributes.placeHolder
+        var keyboardType: String = ""
+        if let type = attributes.keyboardType {
+            keyboardType = type
+        }
+        switch keyboardType {
+        case "email":
+            textField.keyboardType = .emailAddress
+            break
+        case "number":
+            textField.keyboardType = .numberPad
+            break
+        case "default":
+            textField.keyboardType = .default
+            break
+        default:textField.keyboardType = .default
+            break
+        }
     }
 }

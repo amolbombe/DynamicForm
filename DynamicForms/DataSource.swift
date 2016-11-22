@@ -128,6 +128,15 @@ extension DataSource: UITableViewDataSource, UITableViewDelegate, UITextFieldDel
             }
             }
             return cell
+        case "date":
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DatePickerTableViewCell", for: indexPath) as! DatePickerTableViewCell
+            cell.setDelegate(delegate: self)
+            if let attribtute = fieldArrays[indexPath.row].attributes {
+                for attrbt in attribtute {
+                    cell.setData(attributes: attrbt)
+                }
+            }
+            return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SingleFieldTableViewCell", for: indexPath) as! SingleFieldTableViewCell
             if let attribtute = fieldArrays[indexPath.row].attributes {

@@ -6,6 +6,7 @@
   "textColor": "#FF00000",
   "placeHolder": "Email Id",
   "backgroundColor": "#00FF00",
+  "keyboardType": "email",
   "label": "Email Id",
   "validationData": [
                      {
@@ -27,6 +28,7 @@
                  "placeHolder": "First Name",
                  "backgroundColor": "#00FF00",
                  "label": "First Name",
+                 "keyboardType": "default",
                  "validationData": [
                                     {
                                     "regx": "",
@@ -43,6 +45,7 @@
                  "placeHolder": "Last Name",
                  "backgroundColor": "#00FF00",
                  "label": "Last Name",
+                 "keyboardType": "default",
                  "validationData": [
                                     {
                                     "regx": "",
@@ -57,12 +60,13 @@
   },
   {
   "type": "triple",
-  "tag": "UserName",
+  "tag": "pin",
   "attributes": [{
                  "textColor": "#FF00000",
                  "placeHolder": "Pin Code",
                  "backgroundColor": "#00FF00",
                  "label": "Pin Code",
+                 "keyboardType": "number",
                  "validationData": [
                                     {
                                     "regx": "",
@@ -79,6 +83,7 @@
                  "placeHolder": "City",
                  "backgroundColor": "#00FF00",
                  "label": "City",
+                 "keyboardType": "default",
                  "validationData": [
                                     {
                                     "regx": "",
@@ -95,6 +100,7 @@
                  "placeHolder": "State",
                  "backgroundColor": "#00FF00",
                  "label": "State",
+                 "keyboardType": "default",
                  "validationData": [
                                     {
                                     "regx": "",
@@ -108,13 +114,16 @@
                  }]
   },
   {
-  "type": "image",
+  "type": "date",
   "tag": "textName",
   "attributes": [{
   "textColor": "#FF00000",
   "text": "User Name",
   "backgroundColor": "#00FF00",
-  "placeHolder": "String"
+  "placeHolder": "String",
+  "keyboardType": "default",
+  "minimumDate": "15/08/1947",
+  "maximumDate": "22/11/2016",
   }]
   },
   {
@@ -124,6 +133,7 @@
   "textColor": "#FF00000",
   "backgroundColor": "#00FF00",
   "label": "Select education",
+  "keyboardType": "default",
   "values": [
              "Graduate",
              "Post graduate",
@@ -149,6 +159,7 @@
   "textColor": "#FF00000",
   "backgroundColor": "#00FF00",
   "label": "Select education",
+  "keyboardType": "default",
   "values": [
              "Graduate",
              "Post graduate",
@@ -174,6 +185,7 @@
   "textColor": "#FF00000",
   "backgroundColor": "#00FF00",
   "label": "Select education",
+  "keyboardType": "default",
   "values": [
              "Graduate",
              "Post graduate",
@@ -198,7 +210,9 @@
   "attributes": [{
   "textColor": "#FF00000",
   "backgroundColor": "#00FF00",
+  "keyboardType": "default",
   "label": "Select education",
+  "keyboardType": "default",
   "values": [
              "Graduate",
              "Post graduate",

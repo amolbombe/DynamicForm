@@ -36,6 +36,10 @@
 		FCAA5A441DE2A9CB00F7AD20 /* DFCheckBoxButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAA5A431DE2A9CB00F7AD20 /* DFCheckBoxButtonController.swift */; };
 		FCAA5A471DE2AD9C00F7AD20 /* CheckBoxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAA5A451DE2AD9C00F7AD20 /* CheckBoxTableViewCell.swift */; };
 		FCAA5A481DE2AD9C00F7AD20 /* CheckBoxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAA5A461DE2AD9C00F7AD20 /* CheckBoxTableViewCell.xib */; };
+		FCB7CF661DE4138D009E7BF6 /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB7CF641DE4138D009E7BF6 /* DatePickerTableViewCell.swift */; };
+		FCB7CF671DE4138D009E7BF6 /* DatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB7CF651DE4138D009E7BF6 /* DatePickerTableViewCell.xib */; };
+		FCB7CF6A1DE41C1E009E7BF6 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB7CF681DE41C1E009E7BF6 /* DatePickerViewController.swift */; };
+		FCB7CF6B1DE41C1E009E7BF6 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB7CF691DE41C1E009E7BF6 /* DatePickerViewController.xib */; };
 		FCC011FE1DD46E0600278DE7 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = FCC011FD1DD46E0600278DE7 /* Data.json */; };
 		FCC012051DD470DF00278DE7 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC012021DD470DF00278DE7 /* Attributes.swift */; };
 		FCC012061DD470DF00278DE7 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC012031DD470DF00278DE7 /* BaseClass.swift */; };
@@ -105,6 +109,10 @@
 		FCAA5A431DE2A9CB00F7AD20 /* DFCheckBoxButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFCheckBoxButtonController.swift; sourceTree = "<group>"; };
 		FCAA5A451DE2AD9C00F7AD20 /* CheckBoxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxTableViewCell.swift; sourceTree = "<group>"; };
 		FCAA5A461DE2AD9C00F7AD20 /* CheckBoxTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckBoxTableViewCell.xib; sourceTree = "<group>"; };
+		FCB7CF641DE4138D009E7BF6 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
+		FCB7CF651DE4138D009E7BF6 /* DatePickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerTableViewCell.xib; sourceTree = "<group>"; };
+		FCB7CF681DE41C1E009E7BF6 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		FCB7CF691DE41C1E009E7BF6 /* DatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
 		FCC011FD1DD46E0600278DE7 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		FCC012021DD470DF00278DE7 /* Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
 		FCC012031DD470DF00278DE7 /* BaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
@@ -181,6 +189,8 @@
 				FC829AEE1DDD915700DE6769 /* CameraTableViewCell.xib */,
 				FCAA5A451DE2AD9C00F7AD20 /* CheckBoxTableViewCell.swift */,
 				FCAA5A461DE2AD9C00F7AD20 /* CheckBoxTableViewCell.xib */,
+				FCB7CF641DE4138D009E7BF6 /* DatePickerTableViewCell.swift */,
+				FCB7CF651DE4138D009E7BF6 /* DatePickerTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -274,6 +284,8 @@
 				FC8FED381DDEBF0C00E7C20A /* DFRadioButtonController.swift */,
 				FC8FED3A1DDF227E00E7C20A /* DFCheckButton.swift */,
 				FCAA5A431DE2A9CB00F7AD20 /* DFCheckBoxButtonController.swift */,
+				FCB7CF681DE41C1E009E7BF6 /* DatePickerViewController.swift */,
+				FCB7CF691DE41C1E009E7BF6 /* DatePickerViewController.xib */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -407,6 +419,8 @@
 				FC3C4F221DD1CD2900E6D1C1 /* Assets.xcassets in Resources */,
 				FCC828861DD305B9001C1160 /* SingleFieldTableViewCell.xib in Resources */,
 				FC3C4F201DD1CD2900E6D1C1 /* Main.storyboard in Resources */,
+				FCB7CF6B1DE41C1E009E7BF6 /* DatePickerViewController.xib in Resources */,
+				FCB7CF671DE4138D009E7BF6 /* DatePickerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,7 +587,9 @@
 				FC8FED391DDEBF0C00E7C20A /* DFRadioButtonController.swift in Sources */,
 				FCA08FD71DD993ED0007A061 /* DFTextField.swift in Sources */,
 				FC294FF91DDC6640000EB505 /* DFRadioButton.swift in Sources */,
+				FCB7CF6A1DE41C1E009E7BF6 /* DatePickerViewController.swift in Sources */,
 				FCDFB4091DD1F68500FBF6AB /* DataSource.swift in Sources */,
+				FCB7CF661DE4138D009E7BF6 /* DatePickerTableViewCell.swift in Sources */,
 				FCC828851DD305B9001C1160 /* SingleFieldTableViewCell.swift in Sources */,
 				FC3C4F1D1DD1CD2900E6D1C1 /* ViewController.swift in Sources */,
 				FCAA5A441DE2A9CB00F7AD20 /* DFCheckBoxButtonController.swift in Sources */,

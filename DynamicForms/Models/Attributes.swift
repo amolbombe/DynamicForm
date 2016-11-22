@@ -19,8 +19,11 @@ public class Attributes: NSObject, Mappable {
 	internal let kAttributesLabelKey: String = "label"
 	internal let kAttributesTextColorKey: String = "textColor"
 	internal let kAttributesBackgroundColorKey: String = "backgroundColor"
-
-
+    internal let kAttributesKeyboardTypeKey: String = "keyboardType"
+    internal let kAttributesMinimumDateKey: String = "minimumDate"
+    internal let kAttributesMaximumDateKey: String = "maximumDate"
+    
+    
     // MARK: Properties
 	public var values: [String]?
 	public var placeHolder: String?
@@ -29,7 +32,9 @@ public class Attributes: NSObject, Mappable {
 	public var label: String?
 	public var textColor: String?
 	public var backgroundColor: String?
-
+    public var keyboardType: String?
+    public var minimumDate: String?
+    public var maximumDate: String?
 
     // MARK: SwiftyJSON Initalizers
     /**
@@ -70,6 +75,9 @@ public class Attributes: NSObject, Mappable {
 		label = json[kAttributesLabelKey].string
 		textColor = json[kAttributesTextColorKey].string
 		backgroundColor = json[kAttributesBackgroundColorKey].string
+        keyboardType = json[kAttributesKeyboardTypeKey].string
+        minimumDate = json[kAttributesMinimumDateKey].string
+        maximumDate = json[kAttributesMaximumDateKey].string
 
     }
 
@@ -94,6 +102,9 @@ public class Attributes: NSObject, Mappable {
 		label <- map[kAttributesLabelKey]
 		textColor <- map[kAttributesTextColorKey]
 		backgroundColor <- map[kAttributesBackgroundColorKey]
+        keyboardType <- map[kAttributesKeyboardTypeKey]
+        minimumDate <- map[kAttributesMinimumDateKey]
+        maximumDate <- map[kAttributesMaximumDateKey]
 
     }
 
@@ -129,6 +140,15 @@ public class Attributes: NSObject, Mappable {
 		if backgroundColor != nil {
 			dictionary.updateValue(backgroundColor! as AnyObject, forKey: kAttributesBackgroundColorKey)
 		}
+        if keyboardType != nil {
+            dictionary.updateValue(keyboardType! as AnyObject, forKey: kAttributesKeyboardTypeKey)
+        }
+        if minimumDate != nil {
+            dictionary.updateValue(minimumDate! as AnyObject, forKey: kAttributesMinimumDateKey)
+        }
+        if maximumDate != nil {
+            dictionary.updateValue(maximumDate! as AnyObject, forKey: kAttributesMaximumDateKey)
+        }
 
         return dictionary
     }
@@ -142,6 +162,9 @@ public class Attributes: NSObject, Mappable {
 		self.label = aDecoder.decodeObject(forKey: kAttributesLabelKey) as? String
 		self.textColor = aDecoder.decodeObject(forKey: kAttributesTextColorKey) as? String
 		self.backgroundColor = aDecoder.decodeObject(forKey: kAttributesBackgroundColorKey) as? String
+        self.keyboardType = aDecoder.decodeObject(forKey: kAttributesKeyboardTypeKey) as? String
+        self.minimumDate = aDecoder.decodeObject(forKey: kAttributesMinimumDateKey) as? String
+        self.maximumDate = aDecoder.decodeObject(forKey: kAttributesMaximumDateKey) as? String
 
     }
 
@@ -153,6 +176,9 @@ public class Attributes: NSObject, Mappable {
 		aCoder.encode(label, forKey: kAttributesLabelKey)
 		aCoder.encode(textColor, forKey: kAttributesTextColorKey)
 		aCoder.encode(backgroundColor, forKey: kAttributesBackgroundColorKey)
+        aCoder.encode(keyboardType, forKey: kAttributesKeyboardTypeKey)
+        aCoder.encode(minimumDate, forKey: kAttributesMinimumDateKey)
+        aCoder.encode(maximumDate, forKey: kAttributesMaximumDateKey)
 
     }
 

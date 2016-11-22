@@ -67,6 +67,8 @@ class ViewController: UIViewController, DropDownDelegate {
         tableView.register(CameraCellNib, forCellReuseIdentifier: "CameraTableViewCell")
         let CheckBoxCellNib = UINib(nibName: "CheckBoxTableViewCell", bundle:nil)
         tableView.register(CheckBoxCellNib, forCellReuseIdentifier: "CheckBoxTableViewCell")
+        let datePickerCellNib = UINib(nibName: "DatePickerTableViewCell", bundle:nil)
+        tableView.register(datePickerCellNib, forCellReuseIdentifier: "DatePickerTableViewCell")
         tableView.dataSource = self.datasource
         tableView.delegate = self.datasource
         tableView.reloadData()
